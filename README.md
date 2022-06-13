@@ -44,5 +44,7 @@
     
   Atenção: o terminal no passo 2 tem que ser aberto referenciando a pasta backend em sua máquina, caso contrário os comandos
   não irão funcionar!
-  Exemplo no linux(ubuntu): /home/meu-usuario/pasta-Onde-Clonei-O-Projeto/backend
- É isso, logo mais estarei trazendo um frontend simples para consumir essa api, quem sabe crio mais endpoints.
+
+Exemplo no linux(ubuntu): /home/meu-usuario/pasta-Onde-Clonei-O-Projeto/backend
+
+É isso, logo mais estarei trazendo um frontend simples para consumir essa api, quem sabe crio mais endpoints.
