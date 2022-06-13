@@ -16,9 +16,10 @@
   
   Requisitos sem docker:
   - ter git instalado em sua máquina;
-  - Ter O nodeJS instalado em sua máquina;
-  
+  - Ter o nodeJS instalado em sua máquina;
+
   Como usar sem docker:
+
     1- clonar o projeto para sua máquina
     2- Na pasta do projeto, abrir um terminal e digitar 'npm install'
     3- Após a instalação digitar no terminal: 'npm start' e aguarda a mensagem: 'planets api running at: 3001'
@@ -32,6 +33,7 @@
   - ter Docker instalado em sua máquina
   
   Como usar com docker:
+
     1- clonar o projeto para sua máquina
     2- Na pasta do projeto, abrir um terminal e digitar 'docker build . -t planets-api' e aguardar a imagem ser criada.
     3- agora vamos rodar o container com: 'docker run -d -p 3001:3001 --name planet-api-container planets-api'
