@@ -1,0 +1,24 @@
+FROM node:14-alpine3.14 AS build
+WORKDIR /app
+
+COPY package*.json ./
+COPY tsconfig.json .
+
+RUN npm install
+
+COPY ./api ./api
+COPY ./controllers ./controllers
+COPY ./interfaces ./interfaces
+COPY ./models ./models
+COPY ./services ./services  
+COPY index.ts Routes.ts ./
+
+RUN npm run build
+
+ENV PORT="3001"
+ENV API_URL="https://planets-info-by-newbapi.p.rapidapi.com/api/v1/planet/list"
+ENV API_KEY="292e6eef2emsh92bde7b8fcc6726p113acajsn58d9aea0494a"
+
+EXPOSE 3001
+
+ENTRYPOINT [ "npm", "start" ]
